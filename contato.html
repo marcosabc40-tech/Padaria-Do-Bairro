@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+
+  <body>
+  <header>
+        <img src="Images/produtos/image.png" alt="Logo da Padaria do Bairro" class="logo">
+       <nav>
+  <a href="./index.html">Início</a>
+    <a href="contato.html" class="ativo">contato</a>
+  <a href="./Pedidos.html">Pedidos Especiais</a>
+  <a href="./Feedback.html">Feedback</a>
+  <a href="./Newsletter.html">Cadastro/Newsletter</a>
+        </nav>
+        <h1>Padaria do Bairro</h1>
+        <p>Bem-vindo à Padaria do Bairro! Oferecemos pães fresquinhos, bolos deliciosos e muito mais.</p>
+        <img src="/Users/marcosdias/Documents/Turmafat/Aula4/e7bc6798-5dbe-48cd-83e1-9192299bda7c.png" alt="" width="300">
+    </header>
+    <main class="contato">
+      <h2 class="contact">Contato:</h2>
+      <form action="">
+        <fieldset>
+
+         <label for="nome">Nome Completo:</label>
+<div class="campo">
+  <i class="fa-solid fa-user"></i>
+  <input
+    type="text"
+    id="nome"
+    placeholder="Digite seu nome completo"
+    required
+  />
+</div>
+          <label for="email">E-mail:</label>
+<div class="campo">
+  <i class="fa-solid fa-envelope"></i>
+  <input
+    type="email"
+    id="email"
+    placeholder="Digite seu e-mail"
+    required
+  />
+</div>
+
+          <label for="assunto">Assunto:</label>
+<div class="campo">
+  <i class="fa-solid fa-list"></i>
+  <select id="assunto" required>
+    <option value="">Selecione o assunto</option>
+    <option>Dúvida</option>
+    <option>Sugestão</option>
+    <option>Elogio</option>
+    <option>Reclamação</option>
+  </select>
+</div>
+          <label for="mensagem">Mensagem:</label>
+<div class="campo">
+  <i class="fa-solid fa-comment"></i>
+  <textarea
+    id="mensagem"
+    placeholder="Digite sua mensagem"
+    required
+    minlength="10"
+  ></textarea>
+</div>
+
+          <label for="telefone">Telefone:</label>
+<div class="campo">
+  <i class="fa-solid fa-phone"></i>
+  <input
+    type="tel"
+    id="telefone"
+    placeholder="(11) 91234-5678"
+    required
+  />
+</div>
+          <button type="submit">Enviar</button>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>

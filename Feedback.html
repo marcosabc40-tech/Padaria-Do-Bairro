@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback</title>
+  <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+
+<header>
+  <img src="Images/produtos/image.png" alt="Logo da Padaria do Bairro" class="logo">
+
+  <nav>
+    <a href="./index.html">Início</a>
+    <a href="./contato.html">Contato</a>
+    <a href="./Pedidos.html">Pedidos Especiais</a>
+    <a href="./Feedback.html" class="ativo">Feedback</a>
+    <a href="./Newsletter.html">Cadastro/Newsletter</a>
+  </nav>
+
+  <h1>Padaria do Bairro</h1>
+  <p>Bem-vindo à Padaria do Bairro! Oferecemos pães fresquinhos, bolos deliciosos e muito mais.</p>
+
+</header>
+
+<main class="container">
+  <form class="formulario" method="post">
+
+    <fieldset>
+      <legend>Feedback do Cliente:</legend>
+
+      <label for="nome">Nome Completo</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="produto">Produto / Serviço</label>
+      <select id="produto" name="produto" required>
+        <option value="">Selecione</option>
+        <option value="pao">Pão</option>
+        <option value="bolo">Bolo</option>
+        <option value="doce">Doce</option>
+        <option value="atendimento">Atendimento</option>
+        <option value="ambiente">Ambiente</option>
+      </select>
+
+      <label for="avaliacao">Avaliação geral</label>
+      <select id="avaliacao" name="avaliacao" required>
+        <option value="">Selecione</option>
+        <option value="excelente">Excelente</option>
+        <option value="bom">Bom</option>
+        <option value="regular">Regular</option>
+        <option value="ruim">Ruim</option>
+      </select>
+
+      <label for="comentarios">Comentários</label>
+      <textarea
+        id="comentarios"
+        name="comentarios"
+        placeholder="Escreva seu feedback aqui..."
+      ></textarea>
+
+      <p><strong>Recomendaria para amigos?</strong></p>
+      <div class="grupo-radio">
+        <label><input type="radio" name="recomenda" value="sim" required> Sim</label>
+        <label><input type="radio" name="recomenda" value="nao"> Não</label>
+      </div>
+
+      <p><strong>Autoriza publicação do depoimento?</strong></p>
+      <div class="grupo-radio">
+        <label><input type="radio" name="autoriza" value="sim" required> Sim</label>
+        <label><input type="radio" name="autoriza" value="nao"> Não</label>
+      </div>
+
+      <button type="submit">Enviar Feedback</button>
+
+    </fieldset>
+  </form>
+</main>
+
+</body>
+</html>

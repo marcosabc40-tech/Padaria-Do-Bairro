@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedidos Especiais</title>
+  <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+
+<header>
+  
+  <nav>
+    <a href="./index.html">Início</a>
+    <a href="./contato.html">Contato</a>
+    <a href="./Pedidos.html" class="ativo">Pedidos Especiais</a>
+    <a href="./Feedback.html">Feedback</a>
+    <a href="./Newsletter.html">Cadastro/Newsletter</a>
+  </nav>
+
+  <h1>Padaria do Bairro</h1>
+  <p>Bem-vindo à Padaria do Bairro! Oferecemos pães fresquinhos, bolos deliciosos e muito mais.</p>
+
+</header>
+
+<main class="container">
+  <form action="" method="post" class="formulario">
+    <h2 class="texto-pedidos">Pedidos:</h2>
+    <fieldset>
+      
+      <label for="nome">Nome Completo:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="telefone">Telefone:</label>
+      <input type="tel" id="telefone" name="telefone" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <p><strong>Tipo de produto:</strong></p>
+      <div class="grupo-radio">
+        <label><input type="radio" name="produto" value="pao" required> Pão</label>
+        <label><input type="radio" name="produto" value="bolo"> Bolo</label>
+        <label><input type="radio" name="produto" value="doce"> Doce</label>
+      </div>
+
+      <label for="sabor_recheio">Sabor / Recheio:</label>
+      <select id="sabor_recheio" name="sabor_recheio" required>
+        <option value="">Selecione</option>
+        <option>Chocolate</option>
+        <option>Baunilha</option>
+        <option>Morango</option>
+        <option>Creme</option>
+        <option>Outro</option>
+      </select>
+
+      <p><strong>Tamanho:</strong></p>
+      <div class="grupo-radio">
+        <label><input type="radio" name="tamanho" value="pequeno"> Pequeno</label>
+        <label><input type="radio" name="tamanho" value="medio"> Médio</label>
+        <label><input type="radio" name="tamanho" value="grande"> Grande</label>
+      </div>
+
+      <label for="data_entrega">Data de entrega:</label>
+      <input type="date" id="data_entrega" name="data_entrega" required>
+
+      <label for="observacoes">Instruções adicionais:</label>
+      <textarea id="observacoes" name="observacoes"></textarea>
+
+      <label for="orcamento_maximo">Orçamento máximo (R$):</label>
+      <input type="number" id="orcamento_maximo" name="orcamento_maximo" min="0" required>
+
+      <button type="submit">Enviar Pedido</button>
+    </fieldset>
+
+  </form>
+</main>
+
+</body>
+</html>
