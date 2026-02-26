@@ -268,6 +268,158 @@ form button:hover{
 }
 
 /* Pedidos */
+.btn-adicionar {
+    background-color: #ff7b00;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+.busca-container {
+    background-color: var(--cor--secundaria);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Estilo do Texto "Buscar produto" */
+.busca-container label {
+    font-family: var(--fonte--principal);
+    font-weight: bold;
+    color: var(--cor--primaria);
+    font-size: 1.1rem;
+}
+
+/* Estilo do Campo de Digitação (Input) */
+#inputBusca {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid var(--cor--primaria);
+    border-radius: 25px; /* Deixa o campo oval */
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+/* Efeito quando o usuário clica no campo (Focus) */
+#inputBusca:focus {
+    border-color: var(--cor--destaque);
+    box-shadow: 0 0 8px rgba(210, 105, 30, 0.5);
+    transform: scale(1.02);
+}
+
+/* Estilo do placeholder (o texto cinza interno) */
+#inputBusca::placeholder {
+    color: #999;
+    font-style: italic;
+}
+/* Para que o seu Carrinho fique tão bonito quanto o restante da página, precisamos dar a ele um estilo que se destaque da tabela, mas que mantenha a identidade visual da padaria.
+
+Atualmente, ele compartilha a classe .Lista, mas podemos criar regras específicas para os elementos internos dele (como a lista de itens e os botões de ação).
+
+CSS para a Seção do Carrinho
+Adicione este código ao seu arquivo CSS:
+
+CSS */
+/* Estilização específica para a seção do Carrinho */
+section.Lista h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+}
+
+#listaCarrinho {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px 0;
+    padding: 0;
+    text-align: left; /* Alinha os itens do carrinho à esquerda */
+}
+
+#listaCarrinho li {
+    background: #fff;
+    margin-bottom: 8px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border-left: 5px solid var(--cor--destaque);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+/* Estilo do Total */
+section.Lista p {
+    font-size: 1.4rem;
+    color: var(--cor--primaria);
+    margin: 20px 0;
+    padding: 10px;
+    border-top: 2px dashed var(--cor--secundaria);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Botões do Carrinho */
+section.Lista button {
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 25px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: transform 0.2s, background-color 0.3s;
+    margin: 5px;
+    width: 100%;
+    max-width: 200px;
+}
+
+/* Botão Finalizar (WhatsApp) */
+section.Lista button[onclick="enviarWhatsApp()"] {
+    background-color: #25d366; /* Verde oficial do WhatsApp */
+    color: white;
+}
+
+section.Lista button[onclick="enviarWhatsApp()"]:hover {
+    background-color: #128c7e;
+    transform: translateY(-2px);
+}
+
+/* Botão Limpar */
+section.Lista button[onclick="limparCarrinho()"] {
+    background-color: #e74c3c; /* Vermelho para atenção */
+    color: white;
+}
+
+section.Lista button[onclick="limparCarrinho()"]:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+}
+
+/* efeito ao passar o mouse */
+.btn-adicionar:hover {
+    background-color: #e66a00;
+    transform: scale(1.05);
+}
+
+/* efeito ao clicar */
+.btn-adicionar:active {
+    transform: scale(0.95);
+}
+
+/* botão desabilitado */
+.btn-adicionar:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
 .texto-pedidos{
     text-align: center;
 }

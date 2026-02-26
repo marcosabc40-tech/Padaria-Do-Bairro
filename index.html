@@ -87,68 +87,114 @@
   </thead>
   <tbody>
     <tr>
-                        <td>Pães</td>
-                        <td>Pão Francês</td>
-                        <td>Pão tradicional, crocante por fora e macio por dentro.</td>
-                        <td>R$ 0,50</td>
-                    </tr>
-                    <tr>
-                        <td>Bolos</td>
-                        <td>Bolo de Chocolate</td>
-                        <td>Bolo fofinho com cobertura de chocolate.</td>
-                        <td>R$ 25,00</td>
-                    </tr>
-                    <tr>
-                        <td>Doces</td>
-                        <td>Brigadeiro</td>
-                        <td>Doce típico brasileiro feito com leite condensado e chocolate.</td> 
-                        <td>R$ 2,00</td>
-                    </tr>
-                    <tr>
-                        <td>Pães</td>
-                        <td>Pão Integral</td>
-                        <td>Pão saudável feito com farinha integral.</td>
-                        <td>R$ 1,50</td>
-                    </tr>
-                    <tr>
-                        <td>Bolos</td>
-                        <td>Bolo de Cenoura</td>
-                        <td>Bolo macio de cenoura com cobertura de chocolate.</td>
-                        <td>R$ 20,00</td>
-                    </tr>
-                    <tr>
-                        <td>Pães</td>
-                        <td>Pão de Forma</td>
-                        <td>Pão tradicional feito com farinha de trigo.</td>
-                        <td>R$ 1,00</td>
-                    </tr>
-                    <tr>
-                        <td>Bolos</td>
-                        <td>Bolo de Milho</td>
-                        <td>Bolo feito com milho fresco e cobertura de chocolate.</td>
-                        <td>R$ 22,00</td>
-                    </tr>
-                    <tr>
-                        <td>Doces</td>
-                        <td>Brigadeiro Romeu e Julieta</td>
-                        <td>Brigadeiro feito com recheio de chocolate e cobertura de chocolate.</td>
-                        <td>R$ 2,00</td>
-                    </tr>
-                    <tr>
-                        <td>Bolos</td>
-                        <td>Torta Julia</td>
-                        <td>Torta feita com massa de folha e recheio de frutas.</td>
-                        <td>R$ 15,00</td>
-                    </tr>
-                    <tr>
-                        <td>Pães</td>
-                        <td>Pão de milho</td>
-                        <td>Pão tradicional feito com farinha de milho.</td>
-                        <td>R$ 5,00</td>
-                    </tr>
-
+        <td>Pães</td>
+        <td>Pão Francês</td>
+        <td>Pão tradicional, crocante por fora e macio por dentro.</td>
+        <td>R$ 0,50</td>
+        <td>
+          <button class="btn-adicionar" onclick="adicionarAoCarrinho('Pão Francês', 0.5)">
+            Adicionar
+          </button>
+        </td>
+    </tr>
+    <tr>
+        <td>Bolos</td>
+        <td>Bolo de Chocolate</td>
+        <td>Bolo fofinho com cobertura de chocolate.</td>
+        <td>R$ 25,00</td>
+        <td>
+          <button class="btn-adicionar" onclick="adicionarAoCarrinho('Bolo de Chocolate', 25.0)">
+            Adicionar
+          </button>
+        </td>
+    </tr>
+    <tr>
+        <td>Doces</td>
+        <td>Brigadeiro</td>
+        <td>Doce típico brasileiro feito com leite condensado e chocolate.</td> 
+        <td>R$ 2,00</td>
+        <td>
+          <button class="btn-adicionar" onclick="adicionarAoCarrinho('Brigadeiro', 2.0)">
+            Adicionar
+          </button>
+        </td>
+    </tr>
+    <tr>
+        <td>Pães</td>
+        <td>Pão Integral</td>
+        <td>Pão saudável feito com farinha integral.</td>
+        <td>R$ 1,50</td>
+        <td>
+          <button class="btn-adicionar" onclick="adicionarAoCarrinho('Pão Integral', 1.5)">
+            Adicionar
+          </button>
+        </td>
+    </tr>
+    <tr>
+        <td>Bolos</td>
+        <td>Bolo de Cenoura</td>
+        <td>Bolo macio de cenoura com cobertura de chocolate.</td>
+        <td>R$ 20,00</td>
+        <td>
+          <button class="btn-adicionar" onclick="adicionarAoCarrinho('Bolo de Cenoura', 20.0)">
+            Adicionar
+          </button>
+        </td>
+    </tr>
+    <tr>
+        <td>Pães</td>
+        <td>Pão de Forma</td>
+        <td>Pão tradicional feito com farinha de trigo.</td>
+        <td>R$ 1,00</td>
+        <td>
+          <button class="btn-adicionar" onclick="adicionarAoCarrinho('Pão de Forma', 1.0)">
+            Adicionar
+          </button>
+        </td>
+    </tr>
+    <tr>
+        <td>Bolos</td>
+        <td>Bolo de Milho</td>
+        <td>Bolo feito com milho fresco e cobertura de chocolate.</td>
+        <td>R$ 22,00</td>
+        <td>
+          <button class="btn-adicionar" onclick="adicionarAoCarrinho('Bolo de Milho', 22.0)">
+            Adicionar
+          </button>
+        </td>
+    </tr>
+    <tr>
+        <td>Doces</td>
+        <td>Brigadeiro Romeu e Julieta</td>
+        <td>Brigadeiro feito com recheio de chocolate e cobertura de chocolate.</td>
+        <td>R$ 2,00</td>
+        <td>
+          <button class="btn-adicionar" onclick="adicionarAoCarrinho('Brigadeiro Romeu e Julieta', 2.0)">
+            Adicionar
+          </button>
+        </td>
+    </tr>
+    <tr>
+        <td>Bolos</td>
+        <td>Torta Julia</td>
+        <td>Torta feita com massa de folha e recheio de frutas.</td>
+        <td>R$ 15,00</td>
+        <td>
+          <button class="btn-adicionar" onclick="adicionarAoCarrinho('Torta Julia', 15.0)">
+            Adicionar
+          </button>
+        </td>
+    </tr>
+   
   </tbody>
 </table>
+<section class="Lista">
+  <h2>🛒 Carrinho</h2>
+  <ul id="listaCarrinho"></ul>
+  <p><strong>Total: R$ <span id="totalCarrinho">0.00</span></strong></p>
+  <button onclick="enviarWhatsApp()">Finalizar Pedido</button>
+  <button onclick="limparCarrinho()">Limpar</button>
+</section>
        <section class="Lista">
   <h2>Momentos:</h2>
 
