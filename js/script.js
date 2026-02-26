@@ -89,3 +89,58 @@ function calcularDesconto(subTotal, percentualDesconto){
 let percentualDesconto = 10;
 // arrow function ( ) => {}
 const calcularPrecos = ( preco, produto) => preco * produto;
+document.addEventListener("DOMContentLoaded", function () {
+
+    const inputBusca = document.getElementById("inputBusca");
+    const linhas = document.querySelectorAll("#tabelaProdutos tbody tr");
+
+    inputBusca.addEventListener("input", function () {
+
+        const filtro = inputBusca.value.toLowerCase().trim();
+        let encontrou = false;
+
+        linhas.forEach(linha => {
+
+            const categoria = linha.cells[0].textContent.toLowerCase();
+            const produto = linha.cells[1].textContent.toLowerCase();
+            const descricao = linha.cells[2].textContent.toLowerCase();
+
+            if (
+                categoria.includes(filtro) ||
+                produto.includes(filtro) ||
+                descricao.includes(filtro)
+            ) {
+                linha.style.display = "";
+                encontrou = true;
+            } else {
+                linha.style.display = "none";
+            }
+
+        });
+
+        mostrarMensagem(encontrou);
+
+    });
+
+    function mostrarMensagem(encontrou) {
+
+        let mensagem = document.getElementById("semResultado");
+
+        if (!encontrou) {
+            if (!mensagem) {
+                mensagem = document.createElement("p");
+                mensagem.id = "semResultado";
+                mensagem.textContent = "❌ Produto não encontrado.";
+                mensagem.style.color = "red";
+                mensagem.style.marginTop = "10px";
+                document.querySelector(".busca-container").appendChild(mensagem);
+            }
+        } else {
+            if (mensagem) {
+                mensagem.remove();
+            }
+        }
+
+    }
+
+});
